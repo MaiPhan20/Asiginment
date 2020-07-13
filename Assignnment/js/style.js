@@ -1,20 +1,21 @@
-let door1 = document.getElementById('door1');
-let door2 = document.getElementById('door2');
-let door3 = document.getElementById('door3');
-let startButton = document.getElementById('start');
-let botDoorPath= "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg";
-let beachDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/beach.svg";
-let spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/space.svg";
-let closedDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg"
-let numClosedDoors = 3;
-let openDoor1;
-let openDoor2;
-let openDoor3;
-let currentlyPlaying = true;
-let score = 0;
-let highScore = 0;
-let currentStreak = document.getElementById('score-number');
-let bestStreak = document.getElementById('high-score-number');
+var door1 = document.getElementById('door1');
+var door2 = document.getElementById('door2');
+var door3 = document.getElementById('door3');
+var startButton = document.getElementById('start');
+//////Cắt ảnh rồi đẩy lên trang web
+var botDoorPath= "https://i.imgur.com/ejmyBNP.png";
+var beachDoorPath = "https://i.imgur.com/9OlfJOF.png";
+var spaceDoorPath = "https://i.imgur.com/RvIeahk.png";
+var closedDoorPath = "https://i.imgur.com/ix9rt3z.png";
+var numClosedDoors = 3;
+var openDoor1;
+var openDoor2;
+var openDoor3;
+var currentlyPlaying = true;
+var score = 0;
+var highScore = 0;
+var currentStreak = document.getElementById('score-number');
+var bestStreak = document.getElementById('high-score-number');
 currentStreak.innerHTML = score;
 bestStreak.innerHTML = highScore;
 
